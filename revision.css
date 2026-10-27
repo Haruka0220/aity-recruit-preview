@@ -1,0 +1,148 @@
+@import url('source-fills.css');
+.team .eyebrow{color:#fff}
+.experience-label{display:inline-block;border-bottom:1px solid #999;padding-bottom:6px}
+/* Keep the large recruitment wordmark within the full section width. */
+.work-summary .giant-type{width:100%;height:auto;bottom:0;transform:translate(-50%,50%);letter-spacing:0;overflow:visible}
+.role-cards{width:100%;gap:clamp(24px,4vw,64px);margin-top:48px;align-items:stretch}
+.role-cards .role-card{height:auto;padding:28px;display:flex;flex-direction:column}
+.role-cards .role-card h4{margin:0;white-space:normal;line-height:1.6}
+.role-cards .role-card-inner{height:auto;min-height:280px;flex:1;padding:40px 20px;justify-content:center;gap:20px}
+@media(min-width:901px){
+ .role-cards{width:90%;max-width:1080px}
+ .role-cards .role-card{aspect-ratio: .92;min-height:480px;padding:30px 28px}
+ .role-cards .role-card-inner{min-height:330px;padding-block:48px}
+}
+.role-card .view-more{align-self:center;min-height:44px;padding:8px 16px;margin:0}
+.role-card .view-more:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.role-card:hover .view-more span{transform:none}
+.role-card .view-more:hover span{transform:translateX(4px)}
+.contact .eyebrow{color:var(--red)}
+footer{justify-content:center;text-align:center}
+.environment-grid article{text-align:center}
+.onboarding .eyebrow,.onboarding .step-number{color:var(--red)}
+.onboarding .steps li{text-align:center}
+.onboarding .steps li:not(:last-child)::after{content:'';width:0;height:0;right:calc(var(--unit)*-2.6);top:50%;transform:translateY(-50%);border-top:calc(var(--unit)*.9) solid transparent;border-bottom:calc(var(--unit)*.9) solid transparent;border-left:calc(var(--unit)*1) solid var(--red)}
+.role-card .view-more{justify-content:center;align-items:center;gap:.25em}
+.role-card:hover .view-more span{transform:translateX(2px)}
+/* Hide slideshow chrome visually; retain pause/navigation for keyboard users. */
+.slideshow-controls:not(:focus-within){width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.manager-detail .role-info .eyebrow{color:var(--red)}
+.manager-detail .role-info dt{background:var(--ink);color:#fff}
+/* Oversized lower-page snap area allows free scrolling inside recruitment. */
+html{scroll-snap-type:y mandatory;scroll-padding-top:0}
+.hero,.story-scene{scroll-snap-align:start;scroll-snap-stop:always}
+.recruitment-flow{scroll-snap-align:start;scroll-snap-stop:normal}
+footer{scroll-snap-align:end;scroll-snap-stop:normal}
+#recruit,#manager,#director,#environment,#faq,#contact{scroll-margin-top:24px}
+/* October approved full-photo concept. Native scrolling; no scroll trapping. */
+.hero{height:100svh;min-height:650px;max-height:1100px}
+.hero::after{display:none}
+.hero-main{position:absolute;top:27.35%;padding-top:0}
+.occupation{margin-top:65px;font-family:Arial,'Hiragino Kaku Gothic ProN',sans-serif;font-size:20px}
+.hero .slide::after{background:none}
+.hero-depth{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hero-shadow{position:absolute;background-size:100% 100%;background-repeat:no-repeat}
+.hero-bottom{position:absolute;filter:blur(calc(var(--unit)*5.66));background:linear-gradient(-2.06deg,rgba(0,0,0,.86) 14.682%,rgba(0,0,0,.542) 101.53%)}
+.store-bottom{left:0;top:61.9325%;width:100%;height:42.9569%}
+.worker-bottom{left:.625%;top:79.3946%;width:100%;height:20.6054%}
+.worker-bottom-two{left:0;top:80.908%;width:100%;height:19.092%;background:linear-gradient(-.915deg,rgba(0,0,0,.9) 14.682%,rgba(0,0,0,.567) 101.53%)}
+.hero .photo.hero-image::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.56) 29.413%,rgba(0,0,0,.06) 65.826%);pointer-events:none}
+.work.story-scene{height:100svh;min-height:650px;max-height:1100px;display:block;background:#1f1f1f}
+.story-scene .work-copy{position:absolute;top:30%;left:8.3333%;right:6%;margin:0;padding:0;width:auto}
+.story-scene .work-copy h2{font-family:Soukou,serif;font-weight:400;font-size:calc(var(--unit)*5.2778);line-height:1.43;letter-spacing:.015em;text-shadow:0 2px 18px #0005}
+.story-scene .work-copy p{font-family:Arial,'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;font-size:calc(var(--unit)*1.3889);line-height:2;max-width:none;margin-top:calc(var(--unit)*4.65);color:#ffffffe6;letter-spacing:.035em}
+.story-scene .eyebrow{position:absolute;top:-40px;color:#ddd;font-size:12px;letter-spacing:.16em}
+.story-scene::after{background:linear-gradient(90deg,#0005,transparent 85%)}
+.story-scene>.photo{filter:none}
+.planning-section>.photo{width:130.4167%;height:131.375%;left:-.6944%;top:-24.625%;transform:scaleX(-1)}
+.contract-section>.photo{width:122.2222%;height:123.75%;left:-3.5417%;top:-23.75%;transform:none}
+.kitchen-section>.photo{width:150.2083%;height:180.25%;left:-42.2917%;top:-8.625%;transform:scaleX(-1)}
+.communication-section>.photo{width:103.125%;height:102.5%;left:0;top:0;transform:scaleX(-1)}
+.dining-section>.photo{width:102.5%;height:184.5%;left:-2.5%;top:-52.75%;transform:none}
+.salon-section>.photo{width:100%;height:118.929%;left:0;top:-9.465%;transform:none}
+.work-summary.story-scene{height:100svh;min-height:760px;max-height:1100px;display:flex;align-items:center;justify-content:flex-start;text-align:left;padding:10% 8.3333% 13%;overflow:visible;z-index:1}
+.work-summary>.photo{z-index:-1;filter:none;opacity:1}
+.work-summary::after{position:absolute;content:'';inset:0;background:linear-gradient(90deg,#0008,#0002);z-index:-1}
+.work-summary h2{font-family:Soukou,serif;font-weight:400;font-size:calc(var(--unit)*6.1111);line-height:1.7;letter-spacing:.035em}
+.work-summary p{font-family:Arial,'Hiragino Kaku Gothic ProN',sans-serif;font-size:clamp(12px,1.1111vw,16px);margin-top:48px}
+.giant-type{font-size:calc(var(--unit)*10.5);bottom:-.52em;color:#b5b5b599;letter-spacing:.09em;z-index:2;pointer-events:none}
+.role-background,.director-detail .role-background{opacity:1;filter:none}
+.team>.photo{filter:none}
+.recruit-intro{height:auto;min-height:calc(var(--unit)*83.6111)}
+.mobile-break{display:none}
+/* Text is visible by default, including when JS is blocked or fails. */
+.story-scene.motion-ready h2,.story-scene.motion-ready .work-copy>p,.story-scene.motion-ready .summary-copy>p{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.story-scene.motion-ready.is-revealed h2{opacity:1;transform:none;transition-delay:.12s}
+.story-scene.motion-ready.is-revealed .work-copy>p,.story-scene.motion-ready.is-revealed .summary-copy>p{opacity:1;transform:none;transition-delay:.95s}
+.mobile-welcome,.mobile-period,.recruit-mobile-copy,.contact-mobile-copy{display:none}
+@media(max-width:900px){
+ .contact .contact-desktop-copy{display:none}
+ .contact .contact-mobile-copy{display:block;text-align:center}
+ .contact .contact-mobile-copy br{display:block}
+ .recruit-intro,.recruit-intro>h2,.recruit-intro>h3,.recruit-intro>p{text-align:center}
+ .recruit-intro .recruit-desktop-copy{display:none}
+ .recruit-intro .recruit-mobile-copy{display:block}
+ .recruit-intro .recruit-mobile-copy br{display:block}
+ .onboarding .steps{grid-template-columns:1fr;gap:24px;width:100%;max-width:420px;margin:26px auto 0}
+ .onboarding .steps li{min-height:108px;padding:24px 20px;display:grid;grid-template-columns:minmax(0,1fr) 56px;column-gap:12px;row-gap:12px;align-content:center;text-align:left}
+ .onboarding .steps .step-number{grid-column:1;grid-row:1;font-size:13px;line-height:1.5}
+ .onboarding .steps h3{grid-column:1;grid-row:2;min-height:0;margin:0;font-size:16px;line-height:1.65;letter-spacing:0}
+ .onboarding .steps .icon-disc{grid-column:2;grid-row:1 / 3;align-self:center;width:56px;height:56px;margin:0}
+ .onboarding .steps .icon-disc img{width:48px;height:48px;object-fit:contain}
+ .onboarding .steps li:not(:last-child)::after{display:block;position:absolute;left:50%;right:auto;top:auto;bottom:-17px;transform:translateX(-50%);width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid var(--red);border-bottom:0}
+ .hero{min-height:460px;max-height:none}.hero-main{left:0;right:6.3%;top:34%;margin-left:6.3%}
+ .hero h1{font-family:Soukou,serif;font-weight:400;font-size:clamp(30px,8.8vw,52px);line-height:1.43;letter-spacing:.02em}
+ .hero h1 span{font-size:1.3158em}
+ .hero h1 .mobile-period{font-size:1em}
+ .hero .mobile-period{display:inline}
+ .hero .occupation{font-family:inherit;font-weight:400;font-size:clamp(12px,3.35vw,18px);margin-top:32px;letter-spacing:0}
+ .mobile-welcome{display:none}
+ .hero .photo.hero-image{width:100%;height:100%;left:0;top:0}
+ .hero .photo.hero-image>img{object-position:55% center}
+ .hero .photo.hero-complete{width:100%;left:0;height:100%;top:0}
+ .hero .photo.hero-complete img{object-fit:cover;object-position:52% center}
+ .hero .header{padding:30px 8%;height:110px}
+ .hero .logo{width:60px;height:60px}
+ .menu-toggle{position:relative;z-index:12;width:44px;height:44px;margin:0;padding:0;background:transparent;font-size:0;border:0}
+ .menu-toggle span{font-size:0;position:absolute;left:0;right:0;top:21px;height:2px;background:#fff}
+ .menu-toggle::before,.menu-toggle::after{content:'';position:absolute;left:0;right:0;height:2px;background:#fff;top:5px}
+ .menu-toggle::after{top:37px}
+ .hero .header nav{position:fixed;inset:0;z-index:11;background:#fff;color:#111;border:0;padding:70px 24px 35px;gap:0;align-items:center;justify-content:space-evenly;font-size:22px;overflow-y:auto;height:100dvh}
+ .hero .header nav a{padding:16px 24px;text-align:center}
+ .menu-toggle[aria-expanded="true"]{position:fixed;top:30px;right:8%}
+ .menu-toggle[aria-expanded="true"] span{opacity:0}
+ .menu-toggle[aria-expanded="true"]::before{top:21px;background:#111;transform:rotate(45deg)}
+ .menu-toggle[aria-expanded="true"]::after{top:21px;background:#111;transform:rotate(-45deg)}
+ html:has(.menu-toggle[aria-expanded="true"]),body:has(.menu-toggle[aria-expanded="true"]){overflow:hidden}
+ .work.story-scene{height:100svh;min-height:650px;max-height:none}
+ .story-scene .work-copy{top:auto;bottom:12%;left:24px;right:24px}
+ .story-scene .work-copy h2{font-size:clamp(27px,5.9vw,50px);line-height:1.65;letter-spacing:0;overflow-wrap:normal}
+ .story-scene .work-copy p{font-size:14px;line-height:2;margin-top:30px;letter-spacing:.01em;max-width:32em}
+ .story-scene .work-copy p br{display:none}
+ .mobile-break{display:block}
+ .planning-section>.photo>img{height:110%!important;top:-5%!important;object-fit:cover!important}
+ .story-scene::after{background:linear-gradient(0deg,#000b,transparent 100%)}
+ .story-scene .eyebrow{top:-34px;font-size:10px}
+ .planning-section>.photo{width:230%;left:-65%;height:100%;top:0}
+ .contract-section>.photo{width:205%;left:-65%;height:100%;top:0}
+ .kitchen-section>.photo{width:230%;height:130%;left:-70%;top:-5%}
+ .communication-section>.photo{width:210%;left:-105%;height:100%;top:0}
+ .dining-section>.photo{width:140%;height:110%;left:-20%;top:-5%}
+ .salon-section>.photo{width:100%;height:100%;left:0;top:0}
+ .salon-section>.photo>img{width:100%!important;height:130%!important;left:0!important;top:-30%!important;object-fit:cover;object-position:27% center}
+ .work.story-scene .work-copy{left:8%;right:8%;bottom:12%}
+ .work.story-scene .work-copy h2{font-size:clamp(32px,9.2vw,60px);line-height:1.55;letter-spacing:0;overflow-wrap:normal;line-break:strict}
+ .work.story-scene .work-copy p{font-size:clamp(12px,3.2vw,18px);line-height:1.9;margin-top:28px;max-width:27em}
+ .salon-section.story-scene::after{background:linear-gradient(0deg,#0003,#0001 65%)}
+ .work-summary.story-scene{height:100svh;min-height:650px;padding:24px;text-align:left}
+ .work-summary h2{font-size:clamp(36px,11.2vw,68px);line-height:1.5;letter-spacing:.02em;overflow-wrap:normal;line-break:strict}
+ .work-summary p{font-size:12px;line-height:2;margin-top:32px}.giant-type{font-size:12vw;letter-spacing:.04em;bottom:-.52em}
+}
+.story-scene.planning-section.motion-ready h2,.story-scene.planning-section.motion-ready .work-copy>p{transform:translateY(48px);transition-duration:1s;transition-delay:0s}
+.story-scene.planning-section.motion-ready.is-revealed h2{transform:none;transition-delay:.2s}
+.story-scene.planning-section.motion-ready.is-revealed .work-copy>p{transform:none;transition-delay:1.5s}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-snap-type:none}
+ .story-scene.planning-section.motion-ready h2,.story-scene.planning-section.motion-ready .work-copy>p{transform:none;transition:none}
+ .story-scene.motion-ready h2,.story-scene.motion-ready .work-copy>p,.story-scene.motion-ready .summary-copy>p{opacity:1;transform:none;transition:none}
+}

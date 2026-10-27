@@ -1,0 +1,14 @@
+Font sources and licenses
+
+SoukouMincho / 装甲明朝 — フロップデザイン
+Source: https://booth.pm/en/items/1028555
+Locally supplied font: /Users/pii/Library/Fonts/SoukouMincho.ttf
+License: SIL Open Font License 1.1 (see SoukouMincho-NOTICE.txt and OFL-1.1.txt).
+Web subset renamed internally to AITY Display Subset. Only the headline glyphs are included.
+
+Noto Serif JP — The Noto Project Authors
+Source: https://fonts.google.com/specimen/Noto+Serif+JP
+License: SIL Open Font License 1.1 (see NotoSerifJP-LICENSE.txt).
+Web subsets renamed internally to AITY Serif Subset. Current page characters and ASCII are included.
+
+Changing the text may require regenerating the web font subsets.

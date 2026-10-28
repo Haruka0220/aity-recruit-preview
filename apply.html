@@ -8,7 +8,7 @@
 <ol class="progress"><li aria-current="step">01 入力</li><li>02 内容確認</li></ol>
 <noscript>この確認用フォームにはJavaScriptが必要です。送信機能はありません。</noscript>
 <form id="entry" autocomplete="off">
-<fieldset class="row"><legend>希望職種 <b>必須</b></legend><div><label class="choice"><input type="radio" name="role" value="現場管理者（施工管理）" required> 現場管理者（施工管理）</label><label class="choice"><input type="radio" name="role" value="建設ディレクター（図面対応・事務）"> 建設ディレクター（図面対応・事務）</label></div></fieldset>
+<div class="row role-row" role="group" aria-labelledby="role-label"><div class="field-label" id="role-label">希望職種 <b>必須</b></div><div><label class="choice"><input type="radio" name="role" value="現場管理者（施工管理）" required> 現場管理者（施工管理）</label><label class="choice"><input type="radio" name="role" value="建設ディレクター（図面対応・事務）"> 建設ディレクター（図面対応・事務）</label></div></div>
 <div class="row"><label for="name">お名前 <b>必須</b></label><input id="name" name="name" required maxlength="100" placeholder="例）山田 太郎"></div>
 <div class="row"><label for="kana">ふりがな <b>必須</b></label><input id="kana" name="kana" required maxlength="100" placeholder="例）やまだ たろう"></div>
 <div class="row"><label for="email">メールアドレス <b>必須</b></label><input id="email" name="email" type="email" required maxlength="254" placeholder="例）test@example.com"></div>

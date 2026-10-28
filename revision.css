@@ -8,6 +8,8 @@
 .role-cards .role-card h4{margin:0;white-space:normal;line-height:1.6}
 .role-cards .role-card-inner{height:auto;min-height:280px;flex:1;padding:40px 20px;justify-content:center;gap:20px}
 @media(min-width:901px){
+ .recruit-intro{padding-top:144px}
+ .director-detail{padding-top:96px;height:auto;min-height:calc(var(--unit)*45.9722)}
  .role-cards{width:90%;max-width:1080px}
  .role-cards .role-card{aspect-ratio: .92;min-height:480px;padding:30px 28px}
  .role-cards .role-card-inner{min-height:330px;padding-block:48px}
